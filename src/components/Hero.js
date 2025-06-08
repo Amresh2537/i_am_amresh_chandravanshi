@@ -8,7 +8,7 @@ const Hero = () => {
     { icon: Phone, text: '6392838207', href: 'tel:6392838207' },
     { icon: Mail, text: 'amresh2537kumar@gmail.com', href: 'mailto:amresh2537kumar@gmail.com' },
     { icon: MapPin, text: 'Sector 3, Chawalaa Colony, Faridabad' },
-    { icon: Linkedin, text: 'LinkedIn Profile', href: 'https://linkedin.com/in/amresh-kumar-chandravanshi-a21b51141' },
+    { icon: Linkedin, text: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/amresh-kumar-chandravanshi-a21b51141/' },
   ]
 
   return (
