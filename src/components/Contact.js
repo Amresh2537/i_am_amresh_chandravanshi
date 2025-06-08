@@ -71,7 +71,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your business processes? Let's discuss how I can help you 
+            Ready to transform your business processes? Lets discuss how I can help you 
             automate workflows, analyze data, and build custom solutions for your needs.
           </p>
         </motion.div>
@@ -86,11 +86,11 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Let's Start a Conversation</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Lets Start a Conversation</h3>
               <p className="text-gray-600 mb-8">
-                I'm always excited to work on new projects and help businesses optimize their 
+                I am always excited to work on new projects and help businesses optimize their 
                 operations. Whether you need automation solutions, data analysis, or custom 
-                application development, I'm here to help.
+                application development, I am here to help.
               </p>
             </div>
 

@@ -103,7 +103,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Here are some of the key projects and applications I've developed to help businesses 
+            Here are some of the key projects and applications I have developed to help businesses 
             automate processes and improve efficiency.
           </p>
         </motion.div>
