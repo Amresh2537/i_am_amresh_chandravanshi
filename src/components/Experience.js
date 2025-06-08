@@ -33,7 +33,7 @@ const Experience = () => {
       company: 'CREATIVE ELECTRONIX',
       location: 'NIT Faridabad',
       role: 'Data Management Executive',
-      period: 'September 2020 – Present',
+      period: 'September 2020 – Feb 2021',
       industry: 'Electronics Manufacturing',
       responsibilities: [
         'Designed and managed MIS, FMS, and PMS systems',

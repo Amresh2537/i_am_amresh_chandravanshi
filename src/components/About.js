@@ -28,8 +28,9 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="bg-gradient-to-br from-white to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,13 +38,14 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-blue-700 to-purple-600 bg-clip-text text-transparent">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
+          {/* Summary Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -51,7 +53,7 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-3xl font-bold text-gray-800 mb-6">
+            <h3 className="text-3xl font-bold text-gray-800">
               Professional Summary
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -65,9 +67,10 @@ const About = () => {
               lies in helping businesses save time, improve efficiency, and scale operations by 
               leveraging smart technology.
             </p>
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+
+            <div className="bg-white/40 backdrop-blur-md p-6 rounded-2xl border border-blue-100 shadow-sm">
               <h4 className="text-xl font-semibold text-gray-800 mb-3">Current Focus</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-700">
                 Working with business owners to create automation systems, optimize team efficiency, 
                 and develop custom apps for tracking, control, and reporting — all powered by 
                 Google Workspace and custom web solutions.
@@ -75,6 +78,7 @@ const About = () => {
             </div>
           </motion.div>
 
+          {/* Highlights Section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -86,13 +90,13 @@ const About = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl card-hover"
+                className="p-6 rounded-2xl bg-white/50 backdrop-blur-lg border border-blue-100 shadow-md transition-all hover:shadow-lg"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg mb-4 shadow-md">
                   <item.icon size={24} className="text-white" />
                 </div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h4>
-                <p className="text-gray-600">{item.description}</p>
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h4>
+                <p className="text-gray-600 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>
