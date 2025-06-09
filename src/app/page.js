@@ -129,9 +129,9 @@ export default function Home() {
               transition={{ duration: 0.3 }}
               className="fixed inset-0 z-[60] flex flex-col items-center justify-center"
             >
-              <div className="w-full max-w-md px-8">
+              <div className="w-full max-w-md px-4 sm:px-8">
                 {/* Progress Bar */}
-                <div className="relative w-full h-2 bg-gray-700 rounded-full mb-8 overflow-hidden">
+                <div className="relative w-full h-1 sm:h-2 bg-gray-700 rounded-full mb-4 sm:mb-8 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
@@ -155,7 +155,7 @@ export default function Home() {
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ type: 'spring', stiffness: 100 }}
-                  className="flex flex-col items-center justify-center mb-8"
+                  className="flex flex-col items-center justify-center mb-4 sm:mb-8"
                 >
                   {/* Spinning Loader */}
                   <motion.div
@@ -167,13 +167,13 @@ export default function Home() {
                       rotate: { duration: 2, repeat: Infinity, ease: "linear" },
                       scale: { duration: 1.5, repeat: Infinity }
                     }}
-                    className="w-20 h-20 rounded-full border-4 border-cyan-400 border-t-transparent mb-6 relative"
+                    className="w-12 h-12 sm:w-20 sm:h-20 rounded-full border-4 border-cyan-400 border-t-transparent mb-3 sm:mb-6 relative"
                   >
                     {/* Inner spinning element */}
                     <motion.div
                       animate={{ rotate: -360 }}
                       transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-                      className="absolute inset-2 rounded-full border-2 border-purple-400 border-b-transparent"
+                      className="absolute inset-1 sm:inset-2 rounded-full border-2 border-purple-400 border-b-transparent"
                     />
                   </motion.div>
                   
@@ -182,7 +182,7 @@ export default function Home() {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3 }}
-                    className="font-pacifico text-4xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-400"
+                    className="font-pacifico text-2xl sm:text-4xl mb-1 sm:mb-2 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-400"
                   >
                     Welcome
                   </motion.span>
@@ -192,7 +192,7 @@ export default function Home() {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 0.9 }}
                     transition={{ delay: 0.6 }}
-                    className="font-poppins text-center text-gray-200 text-lg font-light mb-4"
+                    className="font-poppins text-center text-gray-200 text-sm sm:text-lg font-light mb-2 sm:mb-4 px-2 sm:px-0"
                   >
                     {loadingMessage}
                   </motion.p>
@@ -202,11 +202,9 @@ export default function Home() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 0.7 }}
                     transition={{ delay: 0.9 }}
-                    className="font-poppins text-cyan-300 text-sm font-medium"
+                    className="font-poppins text-cyan-300 text-xs sm:text-sm font-medium"
                   >
-                   {Math.round(Math.min(progress, 100))}%
-
-
+                    {Math.round(Math.min(progress, 100))}%
                   </motion.p>
                 </motion.div>
               </div>
