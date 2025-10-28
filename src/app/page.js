@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Pacifico, Poppins } from 'next/font/google'
 import dynamic from 'next/dynamic'
+const Solutions = dynamic(() => import('@/components/Solutions'), { ssr: false })
+const CaseStudies = dynamic(() => import('@/components/CaseStudies'), { ssr: false })
+
 
 // Dynamically import components to prevent SSR issues
 const Header = dynamic(() => import('@/components/Header'), { ssr: false })
@@ -96,8 +99,11 @@ export default function Home() {
         <div className="pt-[2px]"> {/* Added padding-top of 20px */}
           <Hero />
           <About />
+           <Solutions />
+            <Gallery />
+             <CaseStudies />
           <Education />
-          <Experience />
+          
           <Skills />
           <Projects />
           <Gallery />
