@@ -57,8 +57,8 @@ const About = () => {
               Founder & Automation Leader at Infotech Brains
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I don't just write code - I solve business problems. For the past 5+ years, 
-              I've been helping companies across manufacturing, electronics, and service 
+              I dont just write code - I solve business problems. For the past 5+ years, 
+              I have been helping companies across manufacturing, electronics, and service 
               industries replace their manual processes with smart, automated systems.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">

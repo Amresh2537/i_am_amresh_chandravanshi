@@ -66,7 +66,7 @@ const CaseStudies = () => {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-green-600 to-blue-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See how we've helped businesses like yours move from manual chaos to automated efficiency
+            See how we have helped businesses like yours move from manual chaos to automated efficiency
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ const CaseStudies = () => {
           <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-green-100 mb-6 max-w-2xl mx-auto">
-              Let's discuss how we can automate your manual processes and boost your efficiency
+              Lets discuss how we can automate your manual processes and boost your efficiency
             </p>
             <a
               href="#contact"
